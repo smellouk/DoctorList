@@ -1,0 +1,38 @@
+apply plugin: 'doctor-list-app'
+
+android {
+    defaultConfig {
+        applicationId Config.appId
+        versionCode 1
+        versionName "1.0"
+    }
+
+    buildTypes {
+        debug {
+            applicationIdSuffix = '.debug'
+            resValue "string", "app_name", "Doctor List - Debug"
+        }
+
+        release {
+            resValue "string", "app_name", "Doctor List"
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    implementation project(":common")
+    implementation project(":repositories")
+    implementation project(":features")
+
+    implementation Libs.appcompat
+    implementation Libs.kotlin_stdlib
+
+    implementation Libs.dagger
+    kapt Libs.dagger_compiler
+
+    //chucker library
+    implementation Libs.okhttp
+    debugImplementation Libs.library
+    releaseImplementation Libs.library_no_op
+}

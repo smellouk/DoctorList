@@ -1,0 +1,7 @@
+apply plugin: 'doctor-list-android-module'
+
+dependencies {
+    api project(":features:main-screen")
+    api project(":features:doctor-list-screen")
+    api project(":features:doctor-details-screen")
+}

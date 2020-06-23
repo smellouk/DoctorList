@@ -1,0 +1,10 @@
+include ':features:doctor-details-screen'
+include ':features:doctor-list-screen'
+include ':features:main-screen'
+include ':repositories:offline'
+include ':repositories:remote'
+include ':common'
+include ':features'
+include ':repositories'
+include ':app'
+rootProject.name = "DoctorList"

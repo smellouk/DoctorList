@@ -1,0 +1,5 @@
+apply plugin: 'doctor-list-kotlin-module'
+
+dependencies {
+
+}

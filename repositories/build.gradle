@@ -1,0 +1,6 @@
+apply plugin: 'doctor-list-android-module'
+
+dependencies {
+    api project(":repositories:remote")
+    api project(":repositories:offline")
+}
