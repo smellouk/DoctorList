@@ -20,6 +20,24 @@ object Libs {
             Versions.com_github_chuckerteam_chucker
 
     /**
+     * https://github.com/square/retrofit
+     */
+    const val adapter_rxjava2: String = "com.squareup.retrofit2:adapter-rxjava2:" +
+            Versions.com_squareup_retrofit2
+
+    /**
+     * https://github.com/square/retrofit
+     */
+    const val converter_gson: String = "com.squareup.retrofit2:converter-gson:" +
+            Versions.com_squareup_retrofit2
+
+    /**
+     * https://github.com/square/retrofit
+     */
+    const val retrofit: String = "com.squareup.retrofit2:retrofit:" +
+            Versions.com_squareup_retrofit2
+
+    /**
      * https://square.github.io/okhttp/
      */
     const val logging_interceptor: String = "com.squareup.okhttp3:logging-interceptor:" +
@@ -34,26 +52,33 @@ object Libs {
      * https://kotlinlang.org/
      */
     const val kotlin_android_extensions: String =
-        "org.jetbrains.kotlin:kotlin-android-extensions:" + Versions.org_jetbrains_kotlin
+            "org.jetbrains.kotlin:kotlin-android-extensions:" + Versions.org_jetbrains_kotlin
 
     /**
      * https://kotlinlang.org/
      */
     const val kotlin_android_extensions_runtime: String =
-        "org.jetbrains.kotlin:kotlin-android-extensions-runtime:" +
-                Versions.org_jetbrains_kotlin
+            "org.jetbrains.kotlin:kotlin-android-extensions-runtime:" +
+            Versions.org_jetbrains_kotlin
 
     /**
      * https://kotlinlang.org/
      */
     const val kotlin_annotation_processing_gradle: String =
-        "org.jetbrains.kotlin:kotlin-annotation-processing-gradle:" +
-                Versions.org_jetbrains_kotlin
+            "org.jetbrains.kotlin:kotlin-annotation-processing-gradle:" +
+            Versions.org_jetbrains_kotlin
 
     /**
      * https://kotlinlang.org/
      */
     const val kotlin_gradle_plugin: String = "org.jetbrains.kotlin:kotlin-gradle-plugin:" +
+            Versions.org_jetbrains_kotlin
+
+    /**
+     * https://kotlinlang.org/
+     */
+    const val kotlin_scripting_compiler_embeddable: String =
+            "org.jetbrains.kotlin:kotlin-scripting-compiler-embeddable:" +
             Versions.org_jetbrains_kotlin
 
     /**
@@ -75,35 +100,6 @@ object Libs {
             Versions.androidx_navigation
 
     /**
-     * https://github.com/Tinder/Scarlet
-     */
-    const val lifecycle_android: String = "com.tinder.scarlet:lifecycle-android:" +
-            Versions.com_tinder_scarlet
-
-    /**
-     * https://github.com/Tinder/Scarlet
-     */
-    const val message_adapter_gson: String = "com.tinder.scarlet:message-adapter-gson:" +
-            Versions.com_tinder_scarlet
-
-    /**
-     * https://github.com/Tinder/Scarlet
-     */
-    const val scarlet: String = "com.tinder.scarlet:scarlet:" + Versions.com_tinder_scarlet
-
-    /**
-     * https://github.com/Tinder/Scarlet
-     */
-    const val stream_adapter_rxjava2: String = "com.tinder.scarlet:stream-adapter-rxjava2:" +
-            Versions.com_tinder_scarlet
-
-    /**
-     * https://github.com/Tinder/Scarlet
-     */
-    const val websocket_okhttp: String = "com.tinder.scarlet:websocket-okhttp:" +
-            Versions.com_tinder_scarlet
-
-    /**
      * https://github.com/google/dagger
      */
     const val dagger: String = "com.google.dagger:dagger:" + Versions.com_google_dagger
@@ -115,51 +111,20 @@ object Libs {
             Versions.com_google_dagger
 
     /**
-     * https://developer.android.com/topic/libraries/architecture/index.html
-     */
-    const val room_compiler: String = "androidx.room:room-compiler:" + Versions.androidx_room
-
-    /**
-     * https://developer.android.com/topic/libraries/architecture/index.html
-     */
-    const val room_runtime: String = "androidx.room:room-runtime:" + Versions.androidx_room
-
-    /**
-     * https://developer.android.com/topic/libraries/architecture/index.html
-     */
-    const val room_rxjava2: String = "androidx.room:room-rxjava2:" + Versions.androidx_room
-
-    /**
      * https://developer.android.com/studio
      */
     const val com_android_tools_build_gradle: String = "com.android.tools.build:gradle:" +
             Versions.com_android_tools_build_gradle
 
     const val de_fayard_buildsrcversions_gradle_plugin: String =
-        "de.fayard.buildSrcVersions:de.fayard.buildSrcVersions.gradle.plugin:" +
-                Versions.de_fayard_buildsrcversions_gradle_plugin
+            "de.fayard.buildSrcVersions:de.fayard.buildSrcVersions.gradle.plugin:" +
+            Versions.de_fayard_buildsrcversions_gradle_plugin
 
     /**
      * https://developer.android.com/topic/libraries/architecture/index.html
      */
     const val lifecycle_extensions: String = "androidx.lifecycle:lifecycle-extensions:" +
             Versions.lifecycle_extensions
-
-    /**
-     * http://tools.android.com
-     */
-    const val constraintlayout: String = "androidx.constraintlayout:constraintlayout:" +
-            Versions.constraintlayout
-
-    /**
-     * https://developer.android.com/topic/libraries/architecture/index.html
-     */
-    const val core_testing: String = "androidx.arch.core:core-testing:" + Versions.core_testing
-
-    /**
-     * https://developer.android.com/jetpack/androidx
-     */
-    const val recyclerview: String = "androidx.recyclerview:recyclerview:" + Versions.recyclerview
 
     /**
      * https://developer.android.com/studio
@@ -177,19 +142,9 @@ object Libs {
     const val rxandroid: String = "io.reactivex.rxjava2:rxandroid:" + Versions.rxandroid
 
     /**
-     * http://developer.android.com/tools/extras/support-library.html
-     */
-    const val cardview: String = "androidx.cardview:cardview:" + Versions.cardview
-
-    /**
      * https://developer.android.com/jetpack/androidx
      */
     const val core_ktx: String = "androidx.core:core-ktx:" + Versions.core_ktx
-
-    /**
-     * http://developer.android.com/tools/extras/support-library.html
-     */
-    const val material: String = "com.google.android.material:material:" + Versions.material
 
     /**
      * https://github.com/ReactiveX/RxJava
