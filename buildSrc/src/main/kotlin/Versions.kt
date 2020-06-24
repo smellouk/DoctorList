@@ -20,7 +20,7 @@ object Versions {
 
     const val org_jetbrains_kotlin: String = "1.3.72"
 
-    const val androidx_navigation: String = "2.2.2"
+    const val androidx_navigation: String = "2.2.2" // available: "2.3.0"
 
     const val com_google_dagger: String = "2.28" // available: "2.28.1"
 
@@ -29,6 +29,8 @@ object Versions {
     const val de_fayard_buildsrcversions_gradle_plugin: String = "0.7.0"
 
     const val lifecycle_extensions: String = "2.2.0"
+
+    const val constraintlayout: String = "1.1.3"
 
     const val lint_gradle: String = "27.0.0"
 

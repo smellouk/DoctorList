@@ -33,7 +33,7 @@ class Doctor(
     val phoneNumber: String? = null,
 
     @SerializedName("email")
-    val email: Any? = null,
+    val email: String? = null,
 
     @SerializedName("website")
     val website: String? = null,
