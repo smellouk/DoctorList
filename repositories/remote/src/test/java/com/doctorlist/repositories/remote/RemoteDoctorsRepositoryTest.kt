@@ -1,6 +1,6 @@
 package com.doctorlist.repositories.remote
 
-import com.doctorlist.repositories.remote.dto.Doctor
+import com.doctorlist.repositories.remote.dto.DoctorDto
 import com.doctorlist.repositories.remote.dto.Response
 import com.doctorlist.repositories.remote.network.DoctorsService
 import com.doctorlist.repositories.remote.network.RemoteDoctorsRepository
@@ -81,5 +81,5 @@ class RemoteDoctorsRepositoryTest {
 private const val once = 1
 private const val none = 0
 private const val lastKey = "9821378912"
-private val doctor = Doctor()
+private val doctor = DoctorDto()
 private val response = Response(doctors = listOf(doctor))

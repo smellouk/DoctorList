@@ -5,10 +5,12 @@ import com.doctorlist.app.di.AppComponent
 import com.doctorlist.app.di.AppModule
 import com.doctorlist.app.di.DaggerAppComponent
 import com.doctorlist.app.di.DomainModule
+import com.doctorlist.features.list.di.DoctorListComponent
+import com.doctorlist.features.list.di.DoctorListComponentProvider
 import com.doctorlist.features.main.di.MainComponent
 import com.doctorlist.features.main.di.MainComponentProvider
 
-class App : Application(), MainComponentProvider {
+class App : Application(), MainComponentProvider, DoctorListComponentProvider {
     private lateinit var appComponent: AppComponent
 
     override fun onCreate() {
@@ -20,5 +22,9 @@ class App : Application(), MainComponentProvider {
             .build()
     }
 
-    override fun getMainComponent(): MainComponent = appComponent.getMainComponent()
+    override fun getMainComponent(): MainComponent =
+        appComponent.getMainComponent()
+
+    override fun getDoctorListComponent(): DoctorListComponent =
+        appComponent.getDoctorListComponent()
 }

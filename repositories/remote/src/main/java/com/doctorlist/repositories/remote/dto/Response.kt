@@ -4,13 +4,13 @@ import com.google.gson.annotations.SerializedName
 
 data class Response(
     @SerializedName("doctors")
-    val doctors: List<Doctor?>? = null,
+    val doctors: List<DoctorDto>? = null,
 
     @SerializedName("lastKey")
     val lastKey: String? = null
 )
 
-class Doctor(
+class DoctorDto(
     @SerializedName("id")
     val id: String? = null,
 

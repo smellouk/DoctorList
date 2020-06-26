@@ -8,11 +8,11 @@ sealed class ViewState : BaseViewState {
     object Initial : ViewState()
     object DoctorList : ViewState() {
         @IdRes
-        val destination: Int = R.id.show_doctor_list
+        val destination: Int = R.id.doctor_list_fragment
     }
 
     class DoctorDetails(val doctor: Doctor) : ViewState() {
         @IdRes
-        val destination: Int = R.id.show_doctor_list
+        val destination: Int = R.id.doctor_details_fragment
     }
 }

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="empty_list_error">Something went wrong, please retry by swiping down.</string>
+    <string name="swipe_down_hint">Hint: Check your internet and swipe down to retry again.</string>
+    <string name="doctor_photo_desc">Doctor Photo</string>
+    <string name="recent_visited_doctors">Recent visited doctors</string>
+    <string name="vivy_doctors">Vivy Doctors</string>
+</resources>

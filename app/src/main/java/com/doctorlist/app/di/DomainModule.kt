@@ -2,6 +2,8 @@ package com.doctorlist.app.di
 
 import android.content.Context
 import com.chuckerteam.chucker.api.ChuckerInterceptor
+import com.doctorlist.repositories.offline.OfflineRepositories
+import com.doctorlist.repositories.offline.db.RecentVisitedDoctorsRepository
 import com.doctorlist.repositories.remote.RemoteRepositories
 import dagger.Module
 import dagger.Provides
@@ -12,7 +14,6 @@ class DomainModule(private val hostUrl: String, private val isDebug: Boolean) {
     @AppScope
     @Provides
     fun provideRemoteRepositories(
-        context: Context,
         chuckerInterceptor: ChuckerInterceptor
     ): RemoteRepositories =
         RemoteRepositories(
@@ -23,6 +24,16 @@ class DomainModule(private val hostUrl: String, private val isDebug: Boolean) {
 
     @AppScope
     @Provides
+    fun provideOfflineRepository(context: Context): OfflineRepositories =
+        OfflineRepositories(context)
+
+    @AppScope
+    @Provides
     fun provideDoctorsRepository(repositories: RemoteRepositories) =
         repositories.remoteDoctorsRepository
+
+    @AppScope
+    @Provides
+    fun provideRecentVisitedDoctorRepository(offlineRepositories: OfflineRepositories):
+            RecentVisitedDoctorsRepository = offlineRepositories.recentVisitedDoctorsRepository
 }

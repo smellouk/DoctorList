@@ -30,13 +30,21 @@ object Versions {
 
     const val lifecycle_extensions: String = "2.2.0"
 
+    const val swiperefreshlayout: String = "1.1.0"
+
     const val constraintlayout: String = "1.1.3"
+
+    const val core_testing: String = "2.1.0"
+
+    const val recyclerview: String = "1.1.0"
 
     const val lint_gradle: String = "27.0.0"
 
     const val appcompat: String = "1.1.0"
 
     const val rxandroid: String = "2.1.1"
+
+    const val cardview: String = "1.0.0"
 
     const val core_ktx: String = "1.3.0"
 

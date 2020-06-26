@@ -4,8 +4,8 @@ dependencies {
     implementation Libs.appcompat
     implementation Libs.core_ktx
 
-    implementation Libs.rxjava
-    implementation Libs.rxandroid
+    api Libs.rxjava
+    api Libs.rxandroid
 
     implementation Libs.dagger
     kapt Libs.dagger_compiler

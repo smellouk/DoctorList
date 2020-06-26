@@ -127,10 +127,26 @@ object Libs {
             Versions.lifecycle_extensions
 
     /**
+     * https://developer.android.com/jetpack/androidx
+     */
+    const val swiperefreshlayout: String = "androidx.swiperefreshlayout:swiperefreshlayout:" +
+            Versions.swiperefreshlayout
+
+    /**
      * http://tools.android.com
      */
     const val constraintlayout: String = "androidx.constraintlayout:constraintlayout:" +
             Versions.constraintlayout
+
+    /**
+     * https://developer.android.com/topic/libraries/architecture/index.html
+     */
+    const val core_testing: String = "androidx.arch.core:core-testing:" + Versions.core_testing
+
+    /**
+     * https://developer.android.com/jetpack/androidx
+     */
+    const val recyclerview: String = "androidx.recyclerview:recyclerview:" + Versions.recyclerview
 
     /**
      * https://developer.android.com/studio
@@ -146,6 +162,11 @@ object Libs {
      * https://github.com/ReactiveX/RxAndroid
      */
     const val rxandroid: String = "io.reactivex.rxjava2:rxandroid:" + Versions.rxandroid
+
+    /**
+     * http://developer.android.com/tools/extras/support-library.html
+     */
+    const val cardview: String = "androidx.cardview:cardview:" + Versions.cardview
 
     /**
      * https://developer.android.com/jetpack/androidx

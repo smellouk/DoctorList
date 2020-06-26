@@ -13,6 +13,5 @@ data class Doctor(
     val reviewCount: Int,
     val phoneNumber: String,
     val email: String,
-    val website: String,
-    val openingHours: List<String>
+    val website: String
 ) : Parcelable
