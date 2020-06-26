@@ -24,19 +24,29 @@ object Versions {
 
     const val com_google_dagger: String = "2.28" // available: "2.28.1"
 
+    const val androidx_room: String = "2.2.5"
+
     const val com_android_tools_build_gradle: String = "4.0.0"
 
     const val de_fayard_buildsrcversions_gradle_plugin: String = "0.7.0"
 
     const val lifecycle_extensions: String = "2.2.0"
 
+    const val swiperefreshlayout: String = "1.1.0"
+
     const val constraintlayout: String = "1.1.3"
+
+    const val core_testing: String = "2.1.0"
+
+    const val recyclerview: String = "1.1.0"
 
     const val lint_gradle: String = "27.0.0"
 
     const val appcompat: String = "1.1.0"
 
     const val rxandroid: String = "2.1.1"
+
+    const val cardview: String = "1.0.0"
 
     const val core_ktx: String = "1.3.0"
 
@@ -49,6 +59,8 @@ object Versions {
     const val junit: String = "4.13"
 
     const val mockk: String = "1.10.0"
+
+    const val coil: String = "0.11.0"
 
     /**
      * Current version: "6.1.1"

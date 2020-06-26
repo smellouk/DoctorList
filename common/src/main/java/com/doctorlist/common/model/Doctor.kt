@@ -8,11 +8,10 @@ data class Doctor(
     val id: String,
     val name: String,
     val photoId: String,
-    val rating: Double,
+    val rating: String,
     val address: String,
-    val reviewCount: Int,
+    val reviewCount: String,
     val phoneNumber: String,
     val email: String,
-    val website: String,
-    val openingHours: List<String>
+    val website: String
 ) : Parcelable

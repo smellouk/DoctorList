@@ -17,13 +17,13 @@ data class DoctorEntity(
     val photoId: String? = null,
 
     @ColumnInfo(name = "rating")
-    val rating: Double? = null,
+    val rating: String? = null,
 
     @ColumnInfo(name = "address")
     val address: String? = null,
 
     @ColumnInfo(name = "reviewCount")
-    val reviewCount: Int? = null,
+    val reviewCount: String? = null,
 
     @ColumnInfo(name = "phoneNumber")
     val phoneNumber: String? = null,

@@ -14,7 +14,7 @@ interface RecentDoctorDao {
     fun getById(id: String): Maybe<DoctorEntity>
 
     @Query("SELECT * FROM recent_doctors ORDER BY date DESC LIMIT :limit")
-    fun getRecent(limit: Int = 3): Maybe<List<DoctorEntity>>
+    fun getRecent(limit: Int): Maybe<List<DoctorEntity>>
 
     @Insert(onConflict = OnConflictStrategy.REPLACE)
     fun insert(entity: DoctorEntity): Completable

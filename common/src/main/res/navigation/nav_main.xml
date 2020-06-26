@@ -10,7 +10,8 @@
 
     <fragment
         android:id="@+id/doctor_list_fragment"
-        android:name="com.doctorlist.features.list.DoctorListFragment" />
+        android:name="com.doctorlist.features.list.DoctorListFragment"
+        android:label="doctor_list_fragment" />
 
     <action
         android:id="@+id/show_doctor_details"
@@ -19,5 +20,6 @@
 
     <fragment
         android:id="@+id/doctor_details_fragment"
-        android:name="com.doctorlist.features.details.DoctorDetailsFragment" />
+        android:name="com.doctorlist.features.details.DoctorDetailsFragment"
+        android:label="doctor_details_fragment" />
 </navigation>

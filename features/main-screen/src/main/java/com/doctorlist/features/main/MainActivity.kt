@@ -10,8 +10,8 @@ import com.doctorlist.common.exhaustive
 import com.doctorlist.common.model.Doctor
 import com.doctorlist.common.navigation.MainNavigator
 import com.doctorlist.common.utils.Keys.DOCTOR_KEY
-import com.doctorlist.features.main.Command.OpenDoctorDetails
-import com.doctorlist.features.main.Command.OpenDoctorList
+import com.doctorlist.features.main.Command.*
+import com.doctorlist.features.main.ViewState.*
 import com.doctorlist.features.main.di.MainComponentProvider
 
 class MainActivity : BaseActivity<MainComponentProvider, ViewState, MainViewModel>(
@@ -31,13 +31,14 @@ class MainActivity : BaseActivity<MainComponentProvider, ViewState, MainViewMode
 
     override fun renderViewState(state: ViewState) {
         when (state) {
-            ViewState.Initial -> renderDefaultViewState()
-            is ViewState.DoctorList -> navigateTo(state.destination)
-            is ViewState.DoctorDetails -> navigateTo(
+            is Initial -> renderDefaultViewState()
+            is DoctorList -> navigateTo(state.destination)
+            is DoctorDetails -> navigateTo(
                 state.destination, bundleOf(
                     DOCTOR_KEY to state.doctor
                 )
             )
+            is Pending -> renderDefaultViewState()
         }.exhaustive
     }
 
@@ -50,6 +51,7 @@ class MainActivity : BaseActivity<MainComponentProvider, ViewState, MainViewMode
     }
 
     private fun navigateTo(@IdRes destination: Int, bundle: Bundle? = null) {
+        viewModel.onCommand(SetViewState(Pending))
         navController.navigate(destination, bundle)
     }
 }

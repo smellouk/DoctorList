@@ -111,6 +111,21 @@ object Libs {
             Versions.com_google_dagger
 
     /**
+     * https://developer.android.com/topic/libraries/architecture/index.html
+     */
+    const val room_compiler: String = "androidx.room:room-compiler:" + Versions.androidx_room
+
+    /**
+     * https://developer.android.com/topic/libraries/architecture/index.html
+     */
+    const val room_runtime: String = "androidx.room:room-runtime:" + Versions.androidx_room
+
+    /**
+     * https://developer.android.com/topic/libraries/architecture/index.html
+     */
+    const val room_rxjava2: String = "androidx.room:room-rxjava2:" + Versions.androidx_room
+
+    /**
      * https://developer.android.com/studio
      */
     const val com_android_tools_build_gradle: String = "com.android.tools.build:gradle:" +
@@ -127,10 +142,26 @@ object Libs {
             Versions.lifecycle_extensions
 
     /**
+     * https://developer.android.com/jetpack/androidx
+     */
+    const val swiperefreshlayout: String = "androidx.swiperefreshlayout:swiperefreshlayout:" +
+            Versions.swiperefreshlayout
+
+    /**
      * http://tools.android.com
      */
     const val constraintlayout: String = "androidx.constraintlayout:constraintlayout:" +
             Versions.constraintlayout
+
+    /**
+     * https://developer.android.com/topic/libraries/architecture/index.html
+     */
+    const val core_testing: String = "androidx.arch.core:core-testing:" + Versions.core_testing
+
+    /**
+     * https://developer.android.com/jetpack/androidx
+     */
+    const val recyclerview: String = "androidx.recyclerview:recyclerview:" + Versions.recyclerview
 
     /**
      * https://developer.android.com/studio
@@ -146,6 +177,11 @@ object Libs {
      * https://github.com/ReactiveX/RxAndroid
      */
     const val rxandroid: String = "io.reactivex.rxjava2:rxandroid:" + Versions.rxandroid
+
+    /**
+     * http://developer.android.com/tools/extras/support-library.html
+     */
+    const val cardview: String = "androidx.cardview:cardview:" + Versions.cardview
 
     /**
      * https://developer.android.com/jetpack/androidx
@@ -173,4 +209,9 @@ object Libs {
      * http://mockk.io
      */
     const val mockk: String = "io.mockk:mockk:" + Versions.mockk
+
+    /**
+     * https://github.com/coil-kt/coil
+     */
+    const val coil: String = "io.coil-kt:coil:" + Versions.coil
 }

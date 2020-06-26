@@ -8,7 +8,7 @@ import io.reactivex.Maybe
 class RecentVisitedDoctorsRepository(
     private val recentDoctorDao: RecentDoctorDao
 ) {
-    fun getRecent(limit: Int = 3): Maybe<List<DoctorEntity>> = recentDoctorDao.getRecent(limit)
+    fun getRecent(limit: Int): Maybe<List<DoctorEntity>> = recentDoctorDao.getRecent(limit)
 
     fun insert(entity: DoctorEntity): Completable = recentDoctorDao.insert(entity)
 
