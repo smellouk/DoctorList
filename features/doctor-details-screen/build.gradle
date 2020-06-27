@@ -1,5 +1,15 @@
 apply plugin: 'doctor-list-android-module'
 
 dependencies {
+    implementation project(":common")
+    
     implementation Libs.appcompat
+    implementation Libs.appcompat
+    implementation Libs.constraintlayout
+    implementation Libs.cardview
+
+    implementation Libs.dagger
+    kapt Libs.dagger_compiler
+
+    implementation Libs.coil
 }
