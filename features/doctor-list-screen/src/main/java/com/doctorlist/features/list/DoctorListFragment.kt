@@ -31,8 +31,9 @@ class DoctorListFragment : BaseFragment<
     }
 
     private val endlessScroller: EndlessRecyclerViewScrollListener by lazy {
-        object :
-            EndlessRecyclerViewScrollListener(rvDoctors.layoutManager as StaggeredGridLayoutManager) {
+        object : EndlessRecyclerViewScrollListener(
+            rvDoctors.layoutManager as StaggeredGridLayoutManager
+        ) {
             override fun onLoadMore(page: String?, totalItemsCount: Int, view: RecyclerView?) {
                 loadMoreDoctors(page, doctorListAdapter.currentList)
             }

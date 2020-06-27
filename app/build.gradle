@@ -1,10 +1,23 @@
 apply plugin: 'doctor-list-app'
+apply from: 'git-version.gradle'
 
 android {
     defaultConfig {
         applicationId Config.appId
-        versionCode 1
-        versionName "1.0"
+        versionCode gitVersionCode
+        versionName gitVersionName
+    }
+
+    signingConfigs {
+        if (localProperties.containsKey("storePassword") && localProperties.containsKey("keyAlias")
+                && localProperties.containsKey("keyPassword")) {
+            release {
+                storeFile file("../.signing/release.jks")
+                storePassword localProperties['storePassword']
+                keyAlias localProperties['keyAlias']
+                keyPassword localProperties['keyPassword']
+            }
+        }
     }
 
     buildTypes {
@@ -16,6 +29,11 @@ android {
         release {
             resValue "string", "app_name", "Doctor List"
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+
+            //Add signing if config exists
+            if (localPropertiesFile.canRead()) {
+                signingConfig signingConfigs.release
+            }
         }
     }
 }
